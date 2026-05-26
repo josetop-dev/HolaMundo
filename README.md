@@ -10,4 +10,4 @@ Programa que saluda al usuario por su nombre y muestra un mensaje motivacional.
 - IntelliJ IDEA
 
 ## Autor
-Jose - github.com/josetop-dev
+[Jose](https://github.com/josetop-dev)
