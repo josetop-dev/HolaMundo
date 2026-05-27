@@ -1,5 +1,6 @@
 import java.util.Scanner;
-    public static void main(String[] args) {
+public class HolaMundo {
+    public static void main (String[] args){
         //VARIABLES
         String nombre;
         boolean condicion = true;
@@ -7,11 +8,11 @@ import java.util.Scanner;
 
         //PROGRAMA
         teclado = new Scanner(System.in);
-        if(condicion) {
+        if (condicion) {
             System.out.println("Cual es tu nombre?");
             nombre = teclado.nextLine();
             System.out.println("Hola " + nombre + " bienvenido seas al camino a Microsoft!");
             System.out.println("Dia 1 -> Meta: Ser de los mejores");
         }
     }
-
+}
