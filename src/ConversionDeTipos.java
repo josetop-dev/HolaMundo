@@ -13,8 +13,6 @@ public class ConversionDeTipos {
         double realDouble = Double.parseDouble(realStr);
         System.out.println("realDouble = " + realDouble);
 
-
-
         String logicoStr = "true";
         System.out.println("\nlogicoStr = " + logicoStr);
         boolean logicoBoolean = Boolean.parseBoolean(logicoStr);
@@ -39,18 +37,35 @@ public class ConversionDeTipos {
         System.out.println("\nValor maximo del int: " + Integer.MAX_VALUE);
         System.out.println("Valor maximo del short: " + Short.MAX_VALUE);
         System.out.println("Valor maximo del long: " + Long.MAX_VALUE);
+        System.out.println("Valor maximo del float: " + Float.MAX_VALUE);
         //Valor maximo del int: 2147483647
         //Valor minimo del short: 32767
         int entero1 = 32767;
-        int entero2 = 32771;
+        System.out.println("\nentero1 = " + entero1);
+        int entero2 = 2147483647;
+        System.out.println("entero2 = " + entero2);
 
         short s1 = (short)entero1; //-->Cast para forzar la conversion
-        System.out.println("short <-- int(32767) = " + s1);
+        System.out.println("\nshort1 <-- entero1 (32767) = " + s1 + " //Cast para forzar la conversion");
         short s2 = (short)entero2; /* --> Cast para forzar la conversion (perdida de informacion
-                                  cuando el int es mas grande que la info que soporta el short)*/
-        System.out.println("short <-- int(32771) //perdida de informacion = " + s2);
+                                  cuando el int es mas grande que el valor que soporta el short)*/
+        System.out.println("short2 <-- entero2 (2147483647) = " + s2 + " //perdida de informacion" + " //Cast para forzar la conversion");
         long l = entero2; /* --> Sin Cast ya que el MAX_VALUE de int cabe en long sin problemas*/
-        System.out.println("long <-- int(32771) = " + l);
+        System.out.println("long <---- entero2 (2147483647) = " + l);
+        float f = entero2;
+        System.out.println("float <--- entero2 (2147483647) = " + f);
+        double d = entero2;
+        System.out.println("double <-- entero2 (2147483647) = " + d);
 
+        int intRecuperacionDeShort1 = s1;
+        System.out.println("\nintRecuperacion <-- Short1 = " + intRecuperacionDeShort1);
+        int intRecuperacionDeShort2 = s2;
+        System.out.println("intRecuperacion <-- Short2 = " + intRecuperacionDeShort2 + "//Perdida de Informacion");
+        int intRecuperacionDelLong = (int)l;//Cast para forzar la conversion
+        System.out.println("intRecuperacion <-- long = " + intRecuperacionDelLong + " //Cast para forzar la conversion");
+        int intRecuperacionDeFloat = (int)f;//Cast para forzar la conversion
+        System.out.println("intRecuperacion <-- float = " + intRecuperacionDeFloat + " //Cast para forzar la conversion");
+        int intRecuperacionDeDouble = (int)d;//Cast para forzar la conversion
+        System.out.println("intRecuperacion <-- double = " + intRecuperacionDeDouble + " //Cast para forzar la conversion");
     }
 }
