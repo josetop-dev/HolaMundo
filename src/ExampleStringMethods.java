@@ -2,14 +2,14 @@ public class ExampleStringMethods {
     public static void main(String[] args) {
         String nombre = "Jose";
         System.out.println("nombre.length() = " + nombre.length()); //Regresa el largo de la cadena
-        System.out.println("nombre.toUpperCase() = " + nombre.toUpperCase());//Retorna la cadena en mayuculas
-        System.out.println("nombre.toLowerCase() = " + nombre.toLowerCase());//Retorna la cadena en minusculas
+        System.out.println("nombre.toUpperCase() = " + nombre.toUpperCase());//Retorna la cadena en Mayuculas
+        System.out.println("nombre.toLowerCase() = " + nombre.toLowerCase());//Retorna la cadena en Minusculas
         System.out.println("nombre.equals(\"JOSE\") = " + nombre.equals("JOSE"));
         /*Compara la cadena a nivel de valor y no de instancia -> TRUE || FALSE*/
         System.out.println("nombre.equals(\"Jose\") = " + nombre.equals("Jose"));
         /*Compara la cadena a nivel de valor y no de instancia -> TRUE || FALSE*/
-        System.out.println("nombre.equalsIgnoreCase(j) = " + nombre.equalsIgnoreCase("jOsE"));
-        /*Compara la cadena a nivel de valor y no de instancia -> TRUE || FALSE -> Ignora mayusculas && minusculas*/
+        System.out.println("nombre.equalsIgnoreCase(j) = " + nombre.equalsIgnoreCase("JoSe"));
+        /*Compara la cadena a nivel de valor y no de instancia -> TRUE || FALSE -> Ignora Mayusculas && Minusculas*/
         System.out.println("nombre.compareTo(\"jOsE\") = " + nombre.compareTo("Jose"));
         /*comparacion con .compareTo si retorna 0 es igual la cadena, si no -> es distinta*/
         System.out.println("nombre.compareTo(\"JOSE\") = " + nombre.compareTo("JOSE"));
