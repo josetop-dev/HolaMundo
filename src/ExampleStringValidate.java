@@ -51,29 +51,5 @@ public class ExampleStringValidate {
         if(text5.isBlank()){text5 = "mundo";}//Validacion de si la cadena no es una cadena en blanco --> Add text5 = "mundo"
         System.out.println(textConcatenation = text5.concat("\u0020").concat("mundo"));//Concatenacion
         System.out.println(textConcatenation.toUpperCase());//MAYUSCULAS
-
-        //EXAMPLE 6
-        System.out.println("\nExample6");
-        String text6 = "  hola mundo ";
-        System.out.println("text6.replace('o','0') = " + text6.replace('o','0'));
-            /*.replace() remplazo de caracter por otro -> Acepta String "" & char '' */
-        System.out.println("text6.indexOf('o') = " + text6.indexOf('o'));
-            /*.indexOf() primera ocurrencia retorna la posicion -> Acepta String "" & char '' */
-        System.out.println("text6.indexOf('e') = " + text6.indexOf('e'));
-            /*.indexOf() un valor que no existe retorna (-1) -> Acepta String "" & char '' */
-        System.out.println("text6.lastIndexOf('o') = " + text6.lastIndexOf('o'));
-            /*.lastIndexOf() ultima ocurrencia retorna la posicion -> Acepta String "" & char '' */
-        System.out.println("text6.lastIndexOf('e') = " + text6.lastIndexOf('e'));
-            /*.lastIndexOf() un valor que no existe retorna (-1) -> Acepta String "" & char '' */
-        System.out.println("text6.contains(\"mundo\") = " + text6.contains("mundo"));
-            /*.contains("Siempre un String nunca un char") busca si existe  -> retorna True || False*/
-        System.out.println("text6.contains(\"holi\") = " + text6.contains("holi"));
-            /*.contains("Siempre un String nunca un char") busca si existe -> retorna True || False*/
-        System.out.println("text6.startsWith(\"h\") = " + text6.startsWith("h"));
-            /*.startsWith("Siempre un String nunca un char") compara si empieza con ... -> retorna True || False*/
-        System.out.println("text6.endsWith(\"o\") = " + text6.endsWith("o"));
-            /*.andsWith("Siempre un String nunca un char") compara si termina con... -> retorna True || False*/
-        System.out.println("text6 = " + text6); // Cadena con espacios
-        System.out.println("text6.trim() = " + text6.trim());//.trim() elimina espacios al comienzo y al final.
     }
 }
