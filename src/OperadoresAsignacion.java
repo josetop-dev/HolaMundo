@@ -17,8 +17,8 @@ public class OperadoresAsignacion {
         i %= j;// i = i % j; <-- mod escrita de una manera mas simplificada
         System.out.println("i %= j --> " + i);
         String cadena = "Hola";
-        cadena += " ";
-        cadena += "Mundo";
+        cadena += " "; //Concatenacion de manera mas simplificada
+        cadena += "Mundo"; //Concatenacion de manera mas simplificada
         System.out.println("cadena = " + cadena);
     }
 }
