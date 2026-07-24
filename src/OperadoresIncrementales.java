@@ -34,10 +34,10 @@ public class OperadoresIncrementales {
 
         //with --> System.out.println();
         System.out.println("\nWith --> System.out.println();");
-        i=1;//valor inicial
+        i = 1;//valor inicial
         System.out.println("valor inicial de i = " + i);
-        System.out.println("++i = " + ++i);//primero se incrementa y despues se imprime -> imprime 2
-        System.out.println("i++ = " + i++);//primero se imprime y despues se incrementa -> imprime 2
+        System.out.println("++i = " + (++i));//primero se incrementa y despues se imprime -> imprime 2
+        System.out.println("i++ = " + (i++));//primero se imprime y despues se incrementa -> imprime 2
         System.out.println("valor final de i = " + i);//imprime 3
     }
 }
