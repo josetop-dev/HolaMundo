@@ -60,16 +60,24 @@ public class OperadoresLogicosLogin {
         System.out.println("Ingrese la clave");
         String clave = keyboard.nextLine(); //cadena clave ingresada por el usuario a travez del teclado
         for(int i=0; i< usernames.length; i++){
-            if(usernames[i].equals(usuario) && passwords[i].equals(clave)){
-                autenticacion = true; //cambia el valor de la variable autenticacion
-                break; //Sale del ciclo for
-            }
+//            if(usernames[i].equals(usuario) && passwords[i].equals(clave)){
+//                autenticacion = true; //cambia el valor de la variable autenticacion
+//                break; //Sale del ciclo for
+//            }
+            /*se ocupara el operador ternario pues la lista es muy pequeña pero en caso de ser mas de 100 entonces se
+            optaria por el if-else para el uso del brake y no gastar recursos de mas*/
+            autenticacion = usernames[i].equals(usuario) && passwords[i].equals(clave)? true : autenticacion;
+            /*El operador ternario como no tiene el brake continuara con la iteracion del ciclo for*/
         }
-        if (autenticacion) {
+        /*if (autenticacion) {
             System.out.println("Welcome ".concat(usuario).concat("!"));
         }else {
             System.out.println("Usuario o contraseña incorrectos");
             System.out.println("Requiere de autenticacion");
-        }
+        }*/
+        //se asigna el mensaje usando un operrador ternario dependiendo del caso
+        String mensaje = autenticacion? "Welcome ".concat(usuario).concat("!")
+                :"Usuario o contraseña incorrectos \nRequiere de autenticacion";
+        System.out.println(mensaje);
     }
 }
