@@ -11,7 +11,7 @@ public class ExampleStringPracticeExtensionDocumento {
 
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Nombre del documento: ");
-        nombre = keyboard.nextLine().trim();//Entrada normalizada
+        nombre = keyboard.nextLine().trim();//Entrada normalizada (.trim) elimina los espacios al inicio y al final de mas
         System.out.println("Guardar como... ");
         System.out.println(pdf + " ---> Documento portátil");
         System.out.println(docx + " --> Documento de Microsoft Word");
